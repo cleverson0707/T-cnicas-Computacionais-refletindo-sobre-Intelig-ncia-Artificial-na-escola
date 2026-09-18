@@ -1,0 +1,92 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo da página centralizado */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container principal do Quiz */
+.quiz-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Título da Pergunta */
+#pergunta-texto, .tela-final h2 {
+    color: #333333;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+/* Container que organiza os botões verticalmente */
+#alternativas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* Estilo geral dos botões de opções e de reiniciar */
+button {
+    background-color: #f0f2f5;
+    color: #333333;
+    border: 2px solid #e4e6eb;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+/* Efeito de passar o mouse nos botões */
+button:hover {
+    background-color: #667eea;
+    color: #ffffff;
+    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+/* Estado de clique/ativo nos botões */
+button:active {
+    transform: translateY(0);
+}
+
+/* Destaque para o botão de Reiniciar */
+#btn-reiniciar {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    margin-top: 20px;
+}
+
+#btn-reiniciar:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+/* Texto do resultado final */
+#resultado-texto {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
