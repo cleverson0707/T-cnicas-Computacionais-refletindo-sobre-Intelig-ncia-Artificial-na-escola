@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Quiz Dinâmico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Tela de Jogo -->
+        <div id="tela-quiz">
+            <h2 id="pergunta-texto">Carregando pergunta...</h2>
+            <div id="alternativas-container"></div>
+        </div>
+
+        <!-- Tela de Fim de Jogo -->
+        <div id="tela-final" style="display: none;">
+            <h2>Quiz Concluído!</h2>
+            <p id="resultado-texto"></p>
+            <!-- Botão do Desafio Final -->
+            <button id="btn-reiniciar" style="display: none;">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <!-- O atributo type="module" é obrigatório para usar import/export -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
